@@ -1,9 +1,9 @@
-require('dotenv').config();
+require('dotenv').config();   //loads environment variables from .env file
 const mongoose = require('mongoose');
 
 const db = async () => {   //async because connecting to DB
   try {
-    await mongoose.connect(process.env.MONGODB_URI,      //https://mongoosejs.com/docs/
+    await mongoose.connect(process.env.MONGODB_URI,      //process.env accesses .env file to use assigned URI - https://mongoosejs.com/docs/
     {
       useNewUrlParser: true,      //recommended from MongoDB bc driver depreciation
       useUnifiedTopology: true,    //recommended to use Mongo new connection mgmt engine

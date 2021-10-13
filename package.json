@@ -8,7 +8,8 @@
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm:server\" \"npm:client\""   
+    "dev": "concurrently \"npm:server\" \"npm:client\"",
+    "import": "node backend/seeder.js"
   },
   "keywords": [],
   "author": "",

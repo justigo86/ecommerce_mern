@@ -6,7 +6,7 @@ const productSchema = new mongoose.Schema({
     type: Number,
     required: true
   },
-  name: {
+  title: {
     type: String,
     required: true
   },
@@ -22,10 +22,6 @@ const productSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  availability: {
-    type: Number,
-    required: true
-  },
   image: {
     type: String,
     required: true
@@ -33,6 +29,6 @@ const productSchema = new mongoose.Schema({
 })
 
 const product = mongoose.model('product', productSchema);  //https://mongoosejs.com/docs/guide.html
-//model(name: string, schema?: mongoose.Schema...
+//.model(name: string, schema?: mongoose.Schema...
 
 module.exports = product;
