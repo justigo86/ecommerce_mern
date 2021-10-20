@@ -2,10 +2,12 @@ import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import Home from './pages/Home';
 import Product from './pages/Product';
 import Cart from './pages/Cart';
+import Nav from './components/Nav'
 
 const App = () => {
   return (
     <BrowserRouter>
+      <Nav />
       <div className="app">
         <Switch>
             <Route exact path='/' component={Home} />
